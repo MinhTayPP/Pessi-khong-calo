@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PepSi.PZ</title>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.ico" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Abouts</a></li>
+          <li><a href="#">ConTack</a></li>
+          <li><a href="#">View</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Hãy Chọn <br /><span> PEPSI thích nhất !</span></h2>
+          <p>
+            Pepsi một đồ uống giải khát có gas, lần đầu tiên được sản xuất bởi
+            Caleb Bradham. Ban đầu, Ông pha chế ra một loại nước uống dễ hấp thụ
+            làm từ nước cacbonat, đường, vani và một ít dầu ăn dưới tên “Nước
+            uống của Brad" năm 1892. Pepsi lần đầu tiên sản xuất vào năm 1890 do
+            dược sĩ Caleb Bradham sáng chế tại New Bern, Bắc Carolina. Pepsi đã
+            có nhiều biến thể sản xuất trong những năm qua kể từ năm 1898.
+          </p>
+          <a href="https://www.pepsi.com/">XEM THÊM </a>
+        </div>
+        <div class="imgBox">
+          <img src="images/pepsi001.png" class="pessi" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="images/pepsi001.png"
+            onclick="imgSlider('images/pepsi001.png');chanse('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/pepsi002.png"
+            onclick="imgSlider('images/pepsi002.png');chanse('#e60c2c')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/pepsi003.png"
+            onclick="imgSlider('images/pepsi003.png');chanse('#1e1e1e')"
+          />
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pessi").src = anything;
+      }
+      function chanse(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
